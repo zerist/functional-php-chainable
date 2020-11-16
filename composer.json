@@ -1,0 +1,21 @@
+{
+    "name": "kanye/functional-php-chainable",
+    "description": "functional php with chainable syntax",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zerist",
+            "email": "15871792739@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kanye\\Functional\\": "src"
+        }
+    }
+}
