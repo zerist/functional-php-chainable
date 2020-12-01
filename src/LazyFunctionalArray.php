@@ -3,7 +3,6 @@ namespace Kanye\Functional;
 
 //todo 大循环协程优化
 //todo memorize
-use function MongoDB\BSON\toJSON;
 
 class LazyFunctionalArray extends FunctionalBase {
     protected string $initialFunctionName = 'initial';
