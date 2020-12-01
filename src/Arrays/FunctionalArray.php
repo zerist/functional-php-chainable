@@ -1,5 +1,5 @@
 <?php
-namespace Kanye\Functional;
+namespace Kanye\Functional\Arrays;
 
 /**
  * array wrapped with chainable function

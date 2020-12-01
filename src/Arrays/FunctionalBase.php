@@ -1,5 +1,5 @@
 <?php
-namespace Kanye\Functional;
+namespace Kanye\Functional\Arrays;
 
 abstract class FunctionalBase {
     protected iterable $originData;    //原始数据

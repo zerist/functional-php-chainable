@@ -1,5 +1,5 @@
 <?php
-namespace Kanye\Functional;
+namespace Kanye\Functional\Arrays;
 
 //todo 大循环协程优化
 //todo memorize
