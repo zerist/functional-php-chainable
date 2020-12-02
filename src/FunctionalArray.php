@@ -46,6 +46,24 @@ class FunctionalArray extends FunctionalBase {
         return $this;
     }
 
+    public function pluck(...$keys) {
+        $r = [];
+        foreach ($this->resultData as $key => $value) {
+            if (!is_array($value)) break;
+            if (count($keys) === 1) {
+                $r[] = $value[$keys[0]];
+            } else {
+                $tmp = [];
+                foreach ($value as $field => $v) {
+                    if (in_array($field, $keys)) $tmp[$field] = $v;
+                }
+                $r[] = $tmp;
+            }
+        }
+        $this->resultData = $r;
+        return $this;
+    }
+
     protected function updateNestedStatus(bool $status)
     {
         $this->lastActionStatus = $status;
